@@ -1,0 +1,6 @@
+'''docker pull postgres '''  --> to create a postgres docker image from docker hub
+'''docker run --name data-engineering-postgres -e POSTGRES_PASSWORD=secret -d postgres ''' --> create a container for postres dbms , including environment variable
+''' docker exec -u postgres data-engineering-postgres createdb postgres-db ''' --> create database for postres inside container
+''' docker exec -it data-engineering-postgres psql -U postgres -d postgres-db psql  '''  --> connect to postgres dbms 
+''' \dt ''' --> display tables 
+
